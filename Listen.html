@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="x-icon" href="Images/logo/Energetic Deep House Magazine Logo Design_20250630_152517_0000.png">
+    <title>Inside Deep House</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!--external css-->
+    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+        *
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 50vh;
+            padding: 80px 20px 20px 20px;
+            color: white;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+        }
+        
+      
+        
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .catalog-btn {
+            display: block;
+            width: 100%;
+            padding: 12px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: none;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .catalog-btn:hover {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(245, 87, 108, 0.4);
+            color: white;
+            text-decoration: none;
+        }
+        
+        .home-btn {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important;
+            border: 3px solid #fff;
+            font-weight: bold;
+        }
+        
+        .home-btn:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        }
+        
+        .icon {
+            margin-right: 8px;
+        }
+        
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px #667eea, 0 0 10px #667eea, 0 0 15px #667eea; }
+            50% { box-shadow: 0 0 10px #f5576c, 0 0 20px #f5576c, 0 0 25px #f5576c; }
+            100% { box-shadow: 0 0 5px #667eea, 0 0 10px #667eea, 0 0 15px #667eea; }
+        }
+        
+        .container {
+            animation: glow 3s ease-in-out infinite;
+        }
+        
+      
+            .catalog-btn {
+                padding: 10px 15px;
+                font-size: 0.9rem;
+            }
+       
+    </style>
+  </head>
+ <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img class="img-logo " src="Images/logo/Energetic Deep House Magazine Logo Design_20250630_152517_0000.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="Listen.html"><i class="bi bi-download"></i> Listen</a>
+              <li class="nav-item">
+                <a class="nav-link" href="Playlist.html"><i class="bi bi-music-note-list"></i>Playlist</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalogue.html"><i class="bi bi-backpack2"></i>Catalogue</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Celebrations.html"><i class="bi bi-calendar2-event"></i>Celebrations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ShopClothing.html"><i class="bi bi-cart3"></i>Shop Clothing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Creators.html"><i class="bi bi-play-circle-fill"></i>Creators</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Conversation.html"><i class="bi bi-binoculars"></i><i class="bi bi-journals"></i>Conversation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="culture.creators.html"><i class="bi bi-backpack4-fill"></i>Culture</a>
+              <li class="nav-item">
+                <a class="nav-link" href="Us.html"><i class="bi bi-journal-plus"></i>Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <body>
+       <div class="container">
+       <div class="row">
+        <div class="col-lg-6 col-md-4 col-sm-2 offset-md-3 black p-5 d-flex flex-column shadow col-custom">
+        <div class="d-flex align-items-center justify-content-between">
+          <i class="text-start fa-solid fa-9 border orange border-4 rounded-pill p-2 fs-5 shadow bounce-icon"></i>
+        <div class="affiliate-partner-container text-end"></div>
+          <a href="https://www.beatport.com/?a_aid=67ac70db89309&a_bid=5f449604" target="_blank" class="affiliate-link">
+            <h6 class="affiliate-text">Affiliate Partner</h6>
+            <img src="Images/beatport-logo-desktop.svg" alt="Beatport Logo" class="img-fluid border-orange shadow img-logo-custom bounce-image">
+          </a>
+        </div>
+        </div>
+        <style>
+        .affiliate-partner-container {
+          text-align: center;
+          margin: 0px ;
+        }
+
+        .bounce-icon {
+          animation: bounceIcon 2s infinite;
+          display: inline-block;
+          margin-bottom: 10px;
+        }
+
+        .affiliate-link {
+          text-decoration: none;
+          display: inline-block;
+        }
+
+        .affiliate-text {
+          font-size: small;
+          color: #fff;
+          text-decoration: none;
+          margin: 10px 0;
+          animation: textGlow 3s ease-in-out infinite;
+        }
+
+        .bounce-image {
+          animation: bounceImage 2.5s infinite;
+          transition: transform 0.3s ease;
+        }
+
+        .bounce-image:hover {
+          transform: scale(1.1) rotate(5deg);
+          animation-play-state: paused;
+        }
+
+        @keyframes bounceIcon {
+          0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+          }
+          40% {
+            transform: translateY(-15px);
+          }
+          60% {
+            transform: translateY(-10px);
+          }
+        }
+
+        @keyframes bounceImage {
+          0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0) scale(1);
+          }
+          40% {
+            transform: translateY(-20px) scale(1.05);
+          }
+          60% {
+            transform: translateY(-10px) scale(1.02);
+          }
+        }
+
+        @keyframes textGlow {
+          0% {
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+          }
+          50% {
+            text-shadow: 0 0 20px rgba(102, 126, 234, 0.8), 0 0 30px rgba(245, 87, 108, 0.6);
+          }
+          100% {
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+          }
+        }
+        </style> 
+        </a>    
+        </div>
+        <div class="d-flex align-items-center justify-content-center mb-3">
+          <img src="Images/logo/Energetic Deep House Magazine Logo Design_20250630_152517_0000.png" alt="" class="img-fluid border-primary border-3 shadow" style="border-radius: 15px; max-width: 300px; height: 300px;">
+        </div>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+             <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"   
+              aria-controls="collapseOne"><h6 style="font-size: large; text-align: center;">Volume 1 by Kamono StereoSoul Kizler</h6></button>
+             </h2>
+              <div id="collapseOne" class="accordion-collapse collapse"
+              aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <img class="img-logo " src="Images/logo/Energetic Deep House Magazine Logo Design_20250630_152517_0000.png" alt="">
+                <img class="img-logo " src="Images/IMG-20240325-WA0012.jpg" alt="">
+                <p><strong> <audio src="StreamDownload/Inside Deep House Vol. 1 Mixed by Kamono StereoSoul Kizler.mp3" controls class="audio-player mx-auto col-lg-10 col-md-8 col-sm-6 mb-4"></audio></strong></p>
+                <p><code>Pretoria | Male 
+                   <a href="https://www.instagram.com/kamohelo_mokoteli/" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">Instagram</a>
+                <a href="https://www.facebook.com/profile.php?id=61561776602658" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">facebook</a></p>
+ 
+                </a>
+               
+              </div>
+          </div>
+          </div> 
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+               <button class="accordion-button collapsed" type="button" 
+               data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" 
+               aria-controls="collapseTwo"><h6 style="font-size: large; text-align: center;">Volume 2 by Kamono StereoSoul Kizler</h6></button>
+              </h2>
+               <div id="collapseTwo" class="accordion-collapse collapse"
+               aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+               <div class="accordion-body">
+                <img class="img-logo " src="Images/logo/Energetic Deep House Magazine Logo Design_20250630_152517_0000.png" alt="">
+                <img class="img-logo mx-auto d-block" src="Images/idh kamono/vol. 2 profile.png" alt="">
+                <p><strong> <audio src="StreamDownload/Inside Deep House Vol 2 mixed by Kamono StereoSoul Kizler.mp3" controls class="audio-player mx-auto col-lg-10 col-md-8 col-sm-6 mb-4"></audio></strong></p>
+                <p><code>Pretoria | Male 
+                <a href="https://www.instagram.com/kamohelo_mokoteli/" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">Instagram</a>
+                <a href="https://www.facebook.com/Kamo.Deejay/" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">facebook</a></p>
+                
+              </div>
+           
+           </div>
+           </div> 
+           <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+             <button class="accordion-button collapsed" type="button" 
+             data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" 
+             aria-controls="collapseThree"><h6 style="font-size: large; text-align: center;">Volume 3 by Thabang Baloyi</h6></button>
+            </h2>
+             <div id="collapseThree" class="accordion-collapse collapse"
+             aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+             <div class="accordion-body">
+              <img class="img-logo " src="Images/idh kamono/thabang b img.png" alt="">
+              <p><strong> <audio src="StreamDownload/Inside Deep House Vol 3 mixed by Thabang Baloyi..mp3" controls class="audio-player mx-auto col-lg-10 col-md-8 col-sm-6 mb-4"></audio></strong></p>
+              <p><code>Pretoria | Male | Producer | DJ <a href="https://thabangbaloyi.bandcamp.com/music" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">Discography</a>
+                              <a href="https://www.facebook.com/thabang360" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">facebook</a></code></p>
+
+            <p><strong>1 - How did you fall in love with creating tracks?</strong> <p class="black-text">I felt in love with music production when I was at school; first I was a music collector. </p></p>
+            <p><strong>2 - How old where you?</strong> <p class="black-text">Lol I'm not sure because it's been years. </p></p>
+            <p><strong>3 - When creating music, demonstrate your creativity, adaptability, and understanding of your audience?</strong> <p class="black-text">When I create music, I create it for myself so I don't picture anything. I just create and if someone loves what I have created - it's a bonus.  </p></p>
+            <p><strong>4 - Please explain: does producing music require technical knowledge of understanding the basics of audio engineering?</strong> <p class="black-text">No, it doesn't require any knowledge. </p></p>
+            <p><strong>5 - Do you have a good grasp of the tools used to create a professional sounding product?</strong> <p class="black-text">I'm using basic equipment and I'm happy with my sound. </p></p>
+           <a href="https://www.loopcloud.com/cloud/subscriptions/plans?a_aid=67ac70db89309&amp;a_bid=437ac091" target="_top"><img src="//loopmasters.postaffiliatepro.com/accounts/default1/hfwq3b89wu2/437ac091.jpg" alt="" title="" class="img-fluid mx-auto d-block" style="max-width: 300px; height: auto;" /></a>
+           <h6 style="font-size: small; text-align: center;">Click image for more</h6>
+           <p><strong>6 - Favourite software programs or tools and how they help you in your work?</strong> <p class="black-text">I'm using ableton live and push 2. I think they help me a lot. I think you have to understand how you produce music first and everything will be easy. </p></p>
+            <p><strong>7 - Who would you like to work with?</strong> <p class="black-text">No one. </p></p>
+            <p><strong>8 - A unique sound and style that can define you?</strong> <p class="black-text">Deep house and Jazz. </p></p>
+            <p><strong>9 - Do you arrive at a gig early to visualize the performance of the DJ playing before you?</strong> <p class="black-text">Yeah, early is the best. </p></p>
+            <p><strong>10 - How do you start understanding the audience and the event type to curate a playlist that suits the vibe?</strong> <p class="black-text">I start by playing 3 different tracks and see if the audience vibe with which sound. </p></p>
+            <img class="img-logo " src="Images/logo/Energetic Deep House Magazine Logo Design_20250630_152517_0000.png" alt=""> 
+
+          </div>
+         </div>
+         </div> 
+         <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+           <button class="accordion-button collapsed" type="button" 
+           data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" 
+           aria-controls="collapseFour"><h6 style="font-size: large; text-align: center;">Volume 4 by Cabalash</h6></button>
+          </h2>
+           <div id="collapseFour" class="accordion-collapse collapse"
+           aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+           <div class="accordion-body">
+            <img class="img-logo " src="Images/idh kamono/IDH Cabalash.png" alt="">
+            <p><strong> <audio src="StreamDownload/Inside Deep House Vol. 4 mixed by Cabalash.mp3" controls class="audio-player mx-auto col-lg-10 col-md-8 col-sm-6 mb-4"></audio></strong></p>
+            <p><code>Pretoria | Male | DJ <a href="https://x.com/CabalashB" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">Twitter X</a>
+                          <a href="https://www.facebook.com/CabalashSA" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">Facebook</a></code></p>
+          <p><strong>1 - How did you learn to DJ?</strong> <p class="black-text">Self taught. I bought myself a MIni Dj controller, then I started to practice.  </p></p>
+          <p><strong>2 - Does your first live set song starts making crowds dance?</strong> <p class="black-text">Yes, killer tune. </p></p>
+          <p><strong>3 - Which of your favourite song do you trust?</strong> <p class="black-text">Sebb Junior - I Like That (Extended mix). </p></p>
+          <p><strong>4 - Describe how you love controlling the energy of a crowd when spinning tracks?</strong> <p class="black-text">Being consistent on my thing and putting more energy on track selection. </p></p>
+          <p><strong>5 - How do you commit to continues learning?</strong> <p class="black-text">Commitment to setting goals and staying focused. </p></p>
+          <a href="https://www.loopcloud.com/cloud/subscriptions/plans?a_aid=67ac70db89309&amp;a_bid=1fe85aa6" target="_top"><img src="//loopmasters.postaffiliatepro.com/accounts/default1/hfwq3b89wu2/1fe85aa6.jpg" alt="" title="" class="img-fluid mx-auto d-block" style="max-width: 300px; height: auto;" /></a>
+          <h6 style="font-size: small; text-align: center;">Click image for more</h6>
+          <p><strong>6 - What are your significant aspects for promoting and marketing yourself as a successful culture creator?</strong> <p class="black-text">Building trust, establish a positive reputation, and create a unique brand experience. </p></p>
+          <p><strong>7 - Who would you like to share a stage with?</strong> <p class="black-text">Kat La Kat. </p></p>
+          <p><strong>8 - Please describe how do you prepare for a live set?</strong> <p class="black-text">Pack your track selection carefully, know the crowd well and venue. Check the equipment are working properly. </p></p>
+          <p><strong>9 - How do you handle technical problems during live perfomance?</strong> <p class="black-text">Quickly assess the cause of the technical issues, while still engaging with the audience. </p></p>
+          <p><strong>10 - How do you keep up-to-date with the latest music trends?</strong> <p class="black-text">Following reliable Deep House record labels on Bandcamp, Beatport and Traxsource. </p></p>
+          <img class="img-logo " src="Images/logo/Energetic Deep House Magazine Logo Design_20250630_152517_0000.png" alt=""> 
+          <a href="https://www.loopmasters.com/sales?a_aid=67ac70db89309&amp;a_bid=1827747f" target="_top"><img src="//loopmasters.postaffiliatepro.com/accounts/default1/hfwq3b89wu2/1827747f.jpg" alt="" title="" class="img-fluid mx-auto d-block" style="max-width: 300px; height: auto;" /></a>
+          <h6 style="font-size: small; text-align: center;">Click image for more</h6>
+        </div>
+       </div>
+       </div> 
+       <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+         <button class="accordion-button collapsed" type="button" 
+         data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" 
+         aria-controls="collapseFive"><h6 style="font-size: large; text-align: center;">Volume 5 by Kamono StereoSoul Kizler</h6></button>
+        </h2>
+         <div id="collapseFive" class="accordion-collapse collapse"
+         aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+         <div class="accordion-body">
+          <img class="img-logo " src="Images/logo/Energetic Deep House Magazine Logo Design_20250630_152517_0000.png" alt="">
+          <img class="img-logo " src="Images/idh kamono/new punkidh.png" alt="">
+          <p><strong> <audio src="StreamDownload/Inside Deep House Vol. 5 mixed by Kamono StereoSoul Kizler..mp3" controls class="audio-player mx-auto col-lg-10 col-md-8 col-sm-6 mb-4"></audio></strong></p>
+          <p><code>Pretoria | Male |Inside Deep House Designer
+          <a href="https://www.facebook.com/profile.php?id=61561776602658" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">Facebook</a>
+                    <a href="https://x.com/kmskizler" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">X</a>
+                    <a href="https://www.instagram.com/kamohelo_mokoteli/" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">Instagram</a>
+                    <a href="https://www.linkedin.com/in/lyimefounder-kamom/" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">Linkedin</a>
+                    <a href="https://soundcloud.com/kamonostereosoulkizler" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">Soundcloud</a>
+                    <a href="https://www.pluginboutique.com/articles/1772?a_aid=67ac70db89309&amp;a_bid=07887b84" target="_top"><img src="//loopmasters.postaffiliatepro.com/accounts/default1/hfwq3b89wu2/07887b84.jpg" alt="" title="" class="img-fluid mx-auto d-block" style="max-width: 300px; height: auto;" /></a>    
+                    <h6 style="font-size: small; text-align: center;">Click image for more</h6>
+        </div>
+     
+     </div>
+     </div> 
+     <div class="accordion-item">
+      <h2 class="accordion-header" id="headingSix">
+       <button class="accordion-button collapsed" type="button" 
+       data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" 
+       aria-controls="collapseSix"><h6 style="font-size: large; text-align: center;">Volume 6 by Kamono StereoSoul Kizler</h6></button>
+      </h2>
+       <div id="collapseSix" class="accordion-collapse collapse"
+       aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+       <div class="accordion-body">
+         <img class="img-logo " src="Images/idh kamono/profile volume 6 idh.png" alt="">
+         <p><strong> <audio src="StreamDownload/Inside Deep House Volume 6 by Kamono StereoSoul Kizler.mp3" controls class="audio-player mx-auto col-lg-10 col-md-8 col-sm-6 mb-4"></audio></strong></p>
+         <p><code>Pretoria | Male | Inside Deep House Designer
+          <a href="https://www.pluginboutique.com/articles/1769?a_aid=67ac70db89309&amp;a_bid=24f157fa" target="_top"><img src="//loopmasters.postaffiliatepro.com/accounts/default1/hfwq3b89wu2/24f157fa.jpg" alt="" title="" class="img-fluid mx-auto d-block" style="max-width: 300px; height: auto;" /></a>
+          <h6 style="font-size: small; text-align: center;">Click image for more</h6>
+        </div>
+   </div>
+   </div> 
+   <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSeven">
+     <button class="accordion-button collapsed" type="button" 
+     data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" 
+     aria-controls="collapseSeven"><h6 style="font-size: large; text-align: center;">Volume 7 by Kamono StereoSoul Kizler</h6></button>
+    </h2>
+     <div id="collapseSeven" class="accordion-collapse collapse"
+     aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+     <div class="accordion-body">
+       <img class="img-logo " src="Images/idh kamono/inside deep house vol 7 new image.png" alt="">
+       <p><strong> <audio src="StreamDownload/Inside Deep House Volume 7 by Kamono StereoSoul Kizler.mp3" controls class="audio-player mx-auto col-lg-10 col-md-8 col-sm-6 mb-4"></audio></strong></p>
+       <a href="https://www.pluginboutique.com/articles/1769?a_aid=67ac70db89309&amp;a_bid=24f157fa" target="_top"><img src="//loopmasters.postaffiliatepro.com/accounts/default1/hfwq3b89wu2/24f157fa.jpg" alt="" title="" class="img-fluid mx-auto d-block" style="max-width: 300px; height: auto;" /></a>
+       <h6 style="font-size: small; text-align: center;">Click image for more</h6>
+       <a href="https://www.facebook.com/profile.php?id=61561776602658" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">Facebook</a>
+       <a href="https://x.com/kmskizler" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">X</a>
+       <a href="https://www.instagram.com/kamohelo_mokoteli/" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">Instagram</a>
+       <a href="https://www.linkedin.com/in/lyimefounder-kamom/" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">Linkedin</a>
+       <a href="https://soundcloud.com/kamonostereosoulkizler" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">Soundcloud</a>
+      </div>
+ </div>
+ </div>
+ <div class="accordion-item">
+  <h2 class="accordion-header" id="headingEight">
+   <button class="accordion-button collapsed" type="button" 
+   data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" 
+   aria-controls="collapseEight"><h6 style="font-size: large; text-align: center;">Volume 8 by Kamono StereoSoul Kizler</h6></button>
+  </h2>
+   <div id="collapseEight" class="accordion-collapse collapse"
+   aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+   <div class="accordion-body">
+     <img class="img-logo " src="Images/idh kamono/Inside deep House new 2025.png" alt="">
+     <p><strong> <audio src="StreamDownload/Inside Deep House Volume 8 by Kamono StereoSoul Kizler.mp3" controls class="audio-player mx-auto col-lg-10 col-md-8 col-sm-6 mb-4"></audio></strong></p>
+     <a href="https://www.pluginboutique.com/articles/1769?a_aid=67ac70db89309&amp;a_bid=24f157fa" target="_top"><img src="//loopmasters.postaffiliatepro.com/accounts/default1/hfwq3b89wu2/24f157fa.jpg" alt="" title=""class="img-fluid mx-auto d-block" style="max-width: 300px; height: auto;" /></a>
+     <h6 style="font-size: small; text-align: center;">Click image for more</h6>
+     <a href="https://www.loopmasters.com/sales?a_aid=67ac70db89309&amp;a_bid=1827747f" target="_top"><img src="//loopmasters.postaffiliatepro.com/accounts/default1/hfwq3b89wu2/1827747f.jpg" alt="" title="" class="img-fluid mx-auto d-block" style="max-width: 300px; height: auto;" /></a>
+     <h6 style="font-size: small; text-align: center;">Click image for more</h6>
+
+                <a href="https://www.djcity.com/?a_aid=67ac70db89309" target="_blank">
+                  <img src="Images/dj city logo.png" alt="" class="img-fluid border-orange shadow img-logo-custom">
+                  <h6 style="font-size: small; text-align: center;">Click button for more</h6>
+                  <a href="https://www.beatport.com/?a_aid=67ac70db89309&a_bid=5f449604" class="btn btn-primary">Visit Beatport</a>
+                  <iframe src="https://embed.beatport.com/?id=19994742&type=track" width="100%" height="162" frameborder="0" scrolling="no" style="max-width:600px;"></iframe>
+                     <a href="https://www.facebook.com/profile.php?id=61561776602658" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">Facebook</a>
+                     <a href="https://x.com/kmskizler" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">X</a>
+                     <a href="https://www.instagram.com/kamohelo_mokoteli/" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">Instagram</a>
+                     <a href="https://www.linkedin.com/in/lyimefounder-kamom/" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">Linkedin</a>
+                     <a href="https://soundcloud.com/kamonostereosoulkizler" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">Soundcloud</a>
+    </div>
+</div>
+</div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingNine">
+     <button class="accordion-button collapsed" type="button" 
+     data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true" 
+     aria-controls="collapseNine"><h6 style="font-size: large; text-align: center;">1 Year Milestone Mix</h6></button> 
+    </h2>
+     <div id="collapseNine" class="accordion-collapse collapse"
+     aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+     <div class="accordion-body">
+       <img class="img-logo " src="Images/idh kamono/1 year milestone mix.png" alt="">
+       <p><strong> <audio src="StreamDownload/Inside Deep House 1 Year Milestone Mix (2).mp3" controls class="audio-player mx-auto col-lg-10 col-md-8 col-sm-6 mb-4"></audio></strong></p>
+       <a href="https://www.pluginboutique.com/articles/1769?a_aid=67ac70db89309&amp;a_bid=24f157fa" target="_top"><img src="//loopmasters.postaffiliatepro.com/accounts/default1/hfwq3b89wu2/24f157fa.jpg" alt="" title="" class="img-fluid mx-auto d-block" style="max-width: 300px; height: auto;" /></a>
+       <h6 style="font-size: small; text-align: center;">Click image for more</h6>
+       <a href="https://www.facebook.com/profile.php?id=61561776602658" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">Facebook</a>
+       <a href="https://x.com/kmskizler" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">X</a>
+       <a href="https://www.instagram.com/kamohelo_mokoteli/" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">Instagram</a>
+       <a href="https://www.linkedin.com/in/lyimefounder-kamom/" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">Linkedin</a>
+       <a href="https://soundcloud.com/kamonostereosoulkizler" class="btn mb-4 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow">Soundcloud</a>
+      </div>
+ </div>
+ </div>
+<a href="https://www.pluginboutique.com/articles/1772?a_aid=67ac70db89309&amp;a_bid=07887b84" target="_top"><img src="//loopmasters.postaffiliatepro.com/accounts/default1/hfwq3b89wu2/07887b84.jpg" alt="" title="" class="img-fluid mx-auto d-block" style="max-width: 300px; height: auto;" /></a>    
+<h6 style="font-size: small; text-align: center;">Click image for more</h6>
+ <a href="https://www.djcity.com/?a_aid=67ac70db89309" target="_blank" class="img-fluid mx-auto d-block" style="max-width: 300px; height: auto;">
+  <img src="Images/dj city logo.png" alt="" class="img-fluid border-orange shadow img-logo-custom">
+ <button type="button" class="btn mb-2 fa-solid border-orange border-4 rounded-pill p-2 fs-5 shadow" title="Home" onclick="window.location.href='index.html'">
+        <i class="bi bi-house"></i>
+      </button>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
+

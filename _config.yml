@@ -1,0 +1,31 @@
+# GitHub Pages Configuration
+
+# Enable GitHub Pages features
+github: [metadata]
+
+# Plugin settings
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Site settings
+title: "Inside Deep House"
+description: "Your destination for the best deep house music mixes, culture, creators, and events."
+url: "https://insidedeephouse.co.za"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Include and exclude files
+include:
+  - _pages
+
+exclude:
+  - README.md
+  - .gitignore
+  - .github/
+  - node_modules/
+  - "*.tmp"
+  - "*.log"

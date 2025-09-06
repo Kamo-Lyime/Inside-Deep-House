@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://insidedeephouse.co.za/sitemap.xml
+
+# Disallow large media files from being crawled
+Disallow: /StreamDownload/
+Disallow: *.mp3
