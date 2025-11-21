@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="x-icon" href="Images/logo/Energetic Deep House Magazine Logo Design_20250630_152517_0000.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Albums - Inside Deep House</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+      .albums-container {
+        margin-top: 100px;
+        margin-bottom: 50px;
+      }
+      .album-card {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 15px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin-bottom: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+      .album-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      }
+      .album-image {
+        width: 100%;
+        height: 300px;
+        object-fit: fill;
+      }
+      .album-details {
+        padding: 20px;
+      }
+      .album-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .album-artist {
+        font-size: 1.1rem;
+        color: #1b1a1a;
+        margin-bottom: 10px;
+      }
+      .album-genre {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+      }
+      .album-description {
+        margin: 15px 0;
+        color: #180a0a;
+      }
+      .social-links {
+        margin: 15px 0;
+      }
+      .social-links a {
+        display: inline-block;
+        margin-right: 15px;
+        font-size: 1.5rem;
+        color: #fff;
+        transition: color 0.3s ease;
+      }
+      .social-links a:hover {
+        color: #1db954;
+      }
+      .buy-button {
+        display: inline-block;
+        padding: 10px 30px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        text-decoration: none;
+        border-radius: 25px;
+        font-weight: bold;
+        transition: transform 0.3s ease;
+      }
+      .buy-button:hover {
+        transform: scale(1.05);
+        color: white;
+      }
+      .loading {
+        text-align: center;
+        padding: 50px;
+        font-size: 1.2rem;
+      }
+      .no-albums {
+        text-align: center;
+        padding: 100px 20px;
+      }
+      .filter-section {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+      }
+      .search-box {
+        max-width: 500px;
+        margin: 0 auto 20px;
+      }
+      .release-date {
+        font-size: 0.9rem;
+        color: #310505;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img class="img-logo " src="Images/logo/Energetic Deep House Magazine Logo Design_20250630_152517_0000.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="Listen.html"><i class="bi bi-download"></i> Listen</a>
+            <li class="nav-item">
+              <a class="nav-link" href="Playlist.html"><i class="bi bi-music-note-list"></i>Playlist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="catalogue.html"><i class="bi bi-backpack2"></i>Catalogue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="albums.html"><i class="bi bi-vinyl"></i>Albums</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="submit-album.html"><i class="bi bi-upload"></i>Submit Album</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Celebrations.html"><i class="bi bi-calendar2-event"></i>Celebrations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ShopClothing.html"><i class="bi bi-cart3"></i>Shop Clothing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Creators.html"><i class="bi bi-play-circle-fill"></i>Creators</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Conversation.html"><i class="bi bi-binoculars"></i><i class="bi bi-journals"></i>Conversation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="culture.creators.html"><i class="bi bi-backpack4-fill"></i>Culture</a>
+            <li class="nav-item">
+              <a class="nav-link" href="Us.html"><i class="bi bi-journal-plus"></i>Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+   
+    <div class="albums-container">
+      <div class="container">
+        <h1 class="text-center mb-4"><i class="bi bi-vinyl"></i> Album Collection</h1>
+         <!-- Submit Album Logo Section -->
+    <div class="container-fluid text-center d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(255,255,255,0.1) 100%); padding: 40px 0; margin-top: 76px; min-height: 50vh;">
+      <img src="Images/logo/idh submit album logo.png" alt="IDH Submit Album Logo" style="max-height: 250px; width: auto; margin-bottom: 50px;">
+    </div>
+        <div class="filter-section">
+          <div class="search-box">
+            <input type="text" class="form-control" id="searchInput" placeholder="Search by artist, album, or genre...">
+          </div>
+          <div class="text-center">
+            <button class="btn btn-sm btn-outline-light me-2" onclick="filterByGenre('all')">All</button>
+            <button class="btn btn-sm btn-outline-light me-2" onclick="filterByGenre('Deep House')">Deep House</button>
+            <button class="btn btn-sm btn-outline-light me-2" onclick="filterByGenre('Soulful House')">Soulful House</button>
+            <button class="btn btn-sm btn-outline-light me-2" onclick="filterByGenre('Afro House')">Afro House</button>
+          </div>
+        </div>
+
+        <div class="loading" id="loading">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <p>Loading albums...</p>
+        </div>
+
+        <div class="no-albums" id="noAlbums" style="display: none;">
+          <i class="bi bi-vinyl" style="font-size: 5rem; color: #666;"></i>
+          <h3>No albums found</h3>
+          <p>Be the first to submit an album!</p>
+          <a href="submit-album.html" class="btn btn-primary">Submit Album</a>
+        </div>
+
+        <div class="row" id="albums-container">
+          <!-- Albums will be loaded here dynamically -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+    
+    <!-- Firebase Configuration -->
+    <script src="firebase-config.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Albums Display Script -->
+    <script>
+      let allAlbums = [];
+      let currentFilter = 'all';
+
+      // Load albums from Firebase
+      function loadAlbums() {
+        const albumsRef = database.ref('albums');
+        
+        albumsRef.on('value', function(snapshot) {
+          const albums = snapshot.val();
+          const loading = document.getElementById('loading');
+          const noAlbums = document.getElementById('noAlbums');
+          const albumsContainer = document.getElementById('albums-container');
+          
+          loading.style.display = 'none';
+          
+          if (!albums) {
+            noAlbums.style.display = 'block';
+            albumsContainer.innerHTML = '';
+            return;
+          }
+
+          // Convert to array and show all albums
+          allAlbums = Object.keys(albums)
+            .map(id => ({ id, ...albums[id] }))
+            // .filter(album => album.approved !== false) // Uncomment to only show approved albums
+            .sort((a, b) => b.submitted_at - a.submitted_at); // Sort by newest first
+
+          if (allAlbums.length === 0) {
+            noAlbums.style.display = 'block';
+            albumsContainer.innerHTML = '';
+          } else {
+            noAlbums.style.display = 'none';
+            displayAlbums(allAlbums);
+          }
+        });
+      }
+
+      // Display albums in the DOM
+      function displayAlbums(albums) {
+        const albumsContainer = document.getElementById('albums-container');
+        albumsContainer.innerHTML = '';
+
+        albums.forEach(album => {
+          const albumCard = createAlbumCard(album);
+          albumsContainer.appendChild(albumCard);
+        });
+      }
+
+      // Create album card element
+      function createAlbumCard(album) {
+        const col = document.createElement('div');
+        col.className = 'col-md-6 col-lg-4';
+
+        const releaseDate = album.release_date ? 
+          `<div class="release-date"><i class="bi bi-calendar3"></i> ${new Date(album.release_date).toLocaleDateString()}</div>` : '';
+
+        const genre = album.genre ? 
+          `<span class="album-genre"><i class="bi bi-music-note"></i> ${album.genre}</span><br>` : '';
+
+        const description = album.description ? 
+          `<div class="album-description">${album.description}</div>` : '';
+
+        // Build social links
+        let socialLinksHtml = '';
+        if (album.social_links && Object.keys(album.social_links).length > 0) {
+          socialLinksHtml = '<div class="social-links">';
+          
+          if (album.social_links.spotify) {
+            socialLinksHtml += `<a href="${album.social_links.spotify}" target="_blank" title="Spotify"><i class="bi bi-spotify"></i></a>`;
+          }
+          if (album.social_links.soundcloud) {
+            socialLinksHtml += `<a href="${album.social_links.soundcloud}" target="_blank" title="SoundCloud"><i class="bi bi-soundwave"></i></a>`;
+          }
+          if (album.social_links.youtube) {
+            socialLinksHtml += `<a href="${album.social_links.youtube}" target="_blank" title="YouTube"><i class="bi bi-youtube"></i></a>`;
+          }
+          if (album.social_links.instagram) {
+            socialLinksHtml += `<a href="${album.social_links.instagram}" target="_blank" title="Instagram"><i class="bi bi-instagram"></i></a>`;
+          }
+          if (album.social_links.facebook) {
+            socialLinksHtml += `<a href="${album.social_links.facebook}" target="_blank" title="Facebook"><i class="bi bi-facebook"></i></a>`;
+          }
+          
+          socialLinksHtml += '</div>';
+        }
+
+        col.innerHTML = `
+          <div class="album-card">
+            <img src="${album.image_url}" alt="${album.album_title}" class="album-image">
+            <div class="album-details">
+              <div class="album-title">${album.album_title}</div>
+              <div class="album-artist">${album.artist_name}</div>
+              ${releaseDate}
+              ${genre}
+              ${description}
+              ${socialLinksHtml}
+              <a href="${album.buy_link}" target="_blank" class="buy-button">
+                <i class="bi bi-cart3"></i> Buy / Stream
+              </a>
+            </div>
+          </div>
+        `;
+
+        return col;
+      }
+
+      // Filter by genre
+      function filterByGenre(genre) {
+        currentFilter = genre;
+        
+        if (genre === 'all') {
+          displayAlbums(allAlbums);
+        } else {
+          const filtered = allAlbums.filter(album => 
+            album.genre && album.genre.toLowerCase().includes(genre.toLowerCase())
+          );
+          displayAlbums(filtered);
+        }
+      }
+
+      // Search functionality
+      document.getElementById('searchInput').addEventListener('input', function(e) {
+        const searchTerm = e.target.value.toLowerCase();
+        
+        const filtered = allAlbums.filter(album => {
+          const artistMatch = album.artist_name.toLowerCase().includes(searchTerm);
+          const titleMatch = album.album_title.toLowerCase().includes(searchTerm);
+          const genreMatch = album.genre && album.genre.toLowerCase().includes(searchTerm);
+          
+          return artistMatch || titleMatch || genreMatch;
+        });
+
+        displayAlbums(filtered);
+      });
+
+      // Load albums when page loads
+      window.addEventListener('load', loadAlbums);
+    </script>
+  </body>
+</html>
